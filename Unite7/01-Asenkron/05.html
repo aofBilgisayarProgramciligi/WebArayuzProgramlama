@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Callback</title>
+</head>
+<body>
+<h1>Callback Örnek</h1>
+
+
+<script>
+	function func1(mesaj,func2){
+        console.log("1 numaralı fonksiyon :", mesaj);
+    	func2()
+    }
+
+    function func2() {
+        console.log("2 numaralı fonksiyon");
+
+    }
+
+    func1("Merhaba Dünya",func2)
+
+	// çıktı: 1 numaralı fonksiyon :Merhaba Dünya
+	// 		: 2 numaralı fonksiyon
+</script>
+</body>
+</html>

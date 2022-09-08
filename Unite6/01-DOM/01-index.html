@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Yapısı Örneği</title>
+</head>
+<body>
+<div class="main">
+  <p class="paragraf" id="p1">1. Paragraf</p>
+  <p class="paragraf" id="p2">2. Paragraf</p>
+  <p class="paragraf" id="p3">3. Paragraf</p>
+</div>
+
+<script>
+	//JavaScript Kodları
+	// let paragraf2= document.getElementById("p2")
+    // console.log(paragraf2);
+	//
+    // console.log(paragraf2.textContent);
+    // // çıktı: 2. Paragraf
+	//
+	// paragraf2.style.backgroundColor="green"
+
+
+    // let paragraf1 = document.querySelector('.paragraf')
+    // console.log(paragraf1);
+	//
+    // let paragraf3 = document.querySelector('#p3')
+    // console.log(paragraf3);
+	//
+    // paragraf3.style.fontSize='25px'
+
+	// let paragrafs= document.querySelectorAll("p")
+    // console.log(paragrafs);
+	//
+    // for (p of paragrafs){
+    //     console.log(p.textContent);
+    // }
+    // // çıktı: 	1. Paragraf
+	// // 			2. Paragraf
+	// // 			3. Paragraf
+
+
+
+
+    // let paragraf2= document.getElementById("p2")
+	// paragraf2.innerText="Yeni Metin"
+	//
+	// let paragraf3=document.getElementById("p3")
+	// paragraf3.innerHTML="<a href='https://google.com'>Yeni Link</a>"
+	//
+	//
+	// paragraf3.remove()
+
+
+	// let liste = document.createElement("ul")
+	//
+	// let sehir1=document.createElement("li")
+	// sehir1.textContent="Ankara"
+	//
+	// let sehir2=document.createElement("li")
+	// sehir2.textContent="İstanbul"
+	//
+	// let sehir3=document.createElement("li")
+	// sehir3.textContent="İzmir"
+	//
+	// document.body.appendChild(liste)
+	//
+	// liste.appendChild(sehir1)
+	// liste.appendChild(sehir2)
+	// liste.appendChild(sehir3)
+
+	// let kapsayici= document.querySelector('.main')
+   //
+	// let prg1 = kapsayici.firstElementChild
+   //
+   //  console.log(prg1);
+	// // çıktı: <p className="paragraf" id="p1">1. Paragraf</p>
+   //
+	// let prg3 = kapsayici.lastElementChild
+   //  console.log(prg3);
+   // // çıktı: <p className="paragraf" id="p3">3. Paragraf</p>
+   //
+	// let prg2 = prg1.nextElementSibling
+   //  console.log(prg2);
+   //  // çıktı: <p className="paragraf" id="p2">2. Paragraf</p>
+   //
+	// let yeniKapsayici= prg2.parentElement
+   //  console.log(yeniKapsayici);
+</script>
+
+</body>
+</html>

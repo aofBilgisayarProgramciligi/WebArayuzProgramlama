@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z Index</title>
+  <style>
+    body {
+      background-color: darkgray;
+    }
+
+    .container {
+      background-color: #dddddd;
+      color: white;
+      width: 300px;
+      height: 150px;
+      position: relative;
+    }
+
+    #div-1 {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left:0;
+      top:0;
+    }
+
+    #div-2 {
+      background-color: green;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left:50px;
+      top:10px;
+    }
+
+    #div-3 {
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left:100px;
+      top:20px;
+    }
+
+    #div-2{
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div id="div-1">Div 1</div>
+  <div id="div-2">Div 2</div>
+  <div id="div-3">Div 3</div>
+</div>
+</body>
+</html>

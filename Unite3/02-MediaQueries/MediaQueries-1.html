@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: yellow;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        .xs-block{
+            display: block;
+        }
+
+        /* Küçük Cihazlar (landscape telefonlar, 576px ve üstü) */
+        @media (min-width: 576px) {
+            body {
+                background-color: greenyellow;
+            }
+
+            .sm-block {
+                display: block;
+            }
+        }
+
+        /* Ortaboy Cihazlar (tabletler, 768px ve üstü)  */
+        @media (min-width: 768px) {
+            body {
+                background-color: green;
+            }
+            .md-block {
+                display: block;
+            }
+        }
+
+        /* Büyük Cihazlar  (bilgisayarlar, 992px ve yukarı) */
+        @media (min-width: 992px) {
+            body {
+                background-color: skyblue;
+            }
+            .lg-block {
+                display: block;
+            }
+        }
+
+        /* Ekstra Büyük Cihazlar (büyük ekranlı bilgisayarlar, 1200px ve üstü) */
+        @media (min-width: 1200px) {
+            body {
+                background-color: blue;
+            }
+            .xl-block {
+                display: block;
+            }
+        }
+
+        /* Ekstra Ekstra Büyük Cihazlar (Ekstra Büyük Ekranlı Bilgisayarlar, 1400px ve üstü) */
+        @media (min-width: 1400px) {
+            body {
+                background-color: blueviolet;
+            }
+            .xxl-block {
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="xs-block">Telefon</h1>
+<h1 class="sm-block">Landscape</h1>
+<h1 class="md-block">Tablet</h1>
+<h1 class="lg-block">Bilgisayar</h1>
+<h1 class="xl-block">Büyük Bilgisayar</h1>
+<h1 class="xxl-block">Ekstra Büyük Bilgisayar</h1>
+</body>
+</html>

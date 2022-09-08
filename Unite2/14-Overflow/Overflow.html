@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+  <style>
+    .container{
+      width: 200px;
+      height: 200px;
+      border: 1px solid gray;
+    }
+
+    p{
+      width: 250px;
+    }
+
+
+    /*!*overflow:visible*!*/
+    /*.container{*/
+    /*  overflow: visible;*/
+    /*}*/
+
+
+    /*overflow:hidden*/
+    .container{
+      overflow: hidden;
+    }
+
+    /*overflow:hidden*/
+    .container{
+      overflow: auto;
+    }
+    .container{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+
+
+  </style>
+</head>
+<body>
+<div class="container">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem mollitia nulla officia sunt. Consequuntur dicta est quibusdam velit voluptatum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem mollitia nulla officia sunt. Consequuntur dicta est quibusdam velit voluptatum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem mollitia nulla officia sunt. Consequuntur dicta est quibusdam velit voluptatum.</p>
+</div>
+</body>
+</html>

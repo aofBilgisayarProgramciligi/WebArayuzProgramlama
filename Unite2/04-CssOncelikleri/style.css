@@ -1,0 +1,11 @@
+*{ color: blueviolet; }
+
+h1{ color: blue; }
+
+.text-red{ color:red;}
+
+h1[title]{ color: aqua;}
+
+#baslikID{ color: yellow;}
+
+

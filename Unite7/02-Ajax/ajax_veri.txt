@@ -1,0 +1,4 @@
+<h1>AJAX</h1>
+<p>AJAX programlama dili değildir.</p>
+<p>AJAX web sayfasından web sunucusuna ulaşma tekniğidir.</p>
+<p>AJAX Asynchronous JavaScript And XML kelimelerinin baş harflerinden oluşur.</p>

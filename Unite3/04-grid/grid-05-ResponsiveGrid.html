@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hücre Alanlarını İsimlendirme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 36px;
+        }
+
+        [class*="box"] {
+            border: 1px solid black;
+            text-align: center;
+            font-weight: bold;
+            background-color: #87CEFA;
+        }
+
+        .container {
+            display: grid;
+            gap: 5px;
+
+            grid-template-areas: "A A A"
+                                 "B C D"
+                                 "B E E";
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                display: grid;
+                gap: 5px;
+
+                grid-template-areas: "A "
+                                    "B "
+                                    "C "
+                                    "D"
+                                    "E";
+            }
+        }
+
+        .header {
+            grid-area: A;
+        }
+
+        .menu {
+            grid-area: B;
+        }
+
+        .main {
+            grid-area: C;
+        }
+
+        .right {
+            grid-area: D;
+        }
+
+        .footer {
+            grid-area: E;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box header">Header</div>
+    <div class="box menu">Menü</div>
+    <div class="box main">İçerik</div>
+    <div class="box right">Sağ Bar</div>
+    <div class="box footer">Footer</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kitap Listesi</title>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px auto auto;
+            grid-template-rows: 50px auto auto;
+            grid-template-areas:  "header header header "
+                                  "menu content  content"
+        }
+
+        .header {
+            grid-area: header;
+            padding: 5px;
+            background-color: #007BFF;
+            text-align: center;
+            color: white;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .menu-link {
+            display: block;
+
+            text-decoration: none;
+            border: 1px solid gray;
+            border-radius: 10px;
+
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            transition: box-shadow 300ms;
+            color: gray;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .menu-link:hover {
+            background-color: #dddddd;
+            box-shadow: 0 0 2px #515151;
+
+        }
+
+        .active {
+            background-color: #dddddd;
+            color: #3a3535;
+        }
+
+
+        .content {
+            grid-area: content;
+        }
+
+        .card {
+            display: inline-block;
+            text-decoration: none;
+            color: #3a3535;
+            width: 150px;
+            background-color: #f1f1f1;
+            margin: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            border-radius: 10px;
+            transition: box-shadow 300ms;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 4px #515151;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .author {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<header class="header">
+		<h1>Kitap Listeleme Uygulaması</h1>
+	</header>
+	<nav class="menu">
+		<a class="menu-link active" href="home.html">Ana Sayfa</a> <a class="menu-link" href="">Yeni Eklenenler</a>
+		<a class="menu-link" href="">Edebiyat</a> <a class="menu-link" href="">Tarih</a>
+	</nav>
+	<section id="content" class="content">
+	</section>
+
+	<script>
+        (function () {
+            fetch('./data.json')
+            .then(data=>data.json())
+            .then(data=>{
+                let contentArea=``
+                data.forEach(d=>{
+                    let bookCard=`
+						<a href="${d.link}" title="Detay İçin Tıklayın..." class="card">
+							<img src="${d.image}" width="" alt="">
+							<h3>${d.bookName}</h3>
+							<div class="author">${d.author}</div>
+							<div>${d.year}</div>
+						</a>
+					`
+                    contentArea+=bookCard
+                })
+                document.getElementById("content").innerHTML=contentArea
+            })
+            .catch(error=>console.log("Veriler yüklenirken hata oluştu : ", error))
+        })()
+	</script>
+</div>
+
+</body>
+</html>

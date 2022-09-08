@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Yapısı</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        [class*="box-"] {
+            border: 1px solid black;
+            text-align: center;
+            font-weight: bold;
+            background-color: #87CEFA;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px 200px;
+        }
+
+        .container{
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box-">1</div>
+    <div class="box-">2</div>
+    <div class="box-">3</div>
+    <div class="box-">4</div>
+    <div class="box-">5</div>
+    <div class="box-">6</div>
+    <div class="box-">7</div>
+    <div class="box-">8</div>
+    <div class="box-">9</div>
+    <div class="box-">10</div>
+    <div class="box-">11</div>
+    <div class="box-">12</div>
+
+</div>
+
+</body>
+</html>

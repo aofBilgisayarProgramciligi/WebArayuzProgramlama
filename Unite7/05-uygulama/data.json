@@ -1,0 +1,23 @@
+[
+  {
+    "bookName": "Çalıkuşu",
+    "author": "Reşat Nuri Güntekin",
+    "year": 1922,
+    "image": "./img/calikusu.jpg",
+    "link": "calikusu.html"
+  },
+  {
+    "bookName": "Küçük Ağa",
+    "author": "Tarık Buğra",
+    "year": 1963,
+    "image": "./img/kucuk_aga.jpg",
+    "link": "kucuk_aga.html"
+  },
+  {
+    "bookName": "Yaban",
+    "author": "Yakup Kadri Karaosmanoğlu",
+    "year": 1932,
+    "image": "./img/yaban.jpg",
+    "link": "yaban.html"
+  }
+]

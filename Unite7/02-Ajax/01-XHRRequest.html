@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>XHR Örneği</title>
+</head>
+<body>
+<h2>XMLHttpRequest Nesnesi Örneği</h2>
+
+<div id="demo">
+    <p>Ajax ile metni değiştirebilirsiniz</p>
+    <button type="button" onclick="loadDoc()">İçeriği Değiştir</button>
+</div>
+
+<script>
+    function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "ajax_veri.txt");
+        xhttp.send();
+    }
+</script>
+
+</body>
+</html>

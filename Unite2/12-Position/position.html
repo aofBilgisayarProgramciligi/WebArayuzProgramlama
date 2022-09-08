@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+
+        body {
+            background-color: darkgray;
+        }
+
+        .container {
+            background-color: #dddddd;
+            color: white;
+            width: 400px;
+            height: 400px;
+        }
+
+        #div-1 {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        #div-2 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+
+        #div-3 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+
+        /*position:relative*/
+        /*#div-2{*/
+        /*  position: relative;*/
+        /*  left: 60px;*/
+        /*  top: 60px;*/
+        /*}*/
+
+        /*position:absolute*/
+        /*#div-2{*/
+        /*    position: absolute;*/
+        /*    right: 5px;*/
+        /*    bottom: 5px;*/
+        /*}*/
+        
+        /*.container{*/
+        /*    position: relative;*/
+        /*}*/
+
+        /*position:fixed*/
+        /*body{*/
+        /*    height: 400vh;*/
+        /*}*/
+        /*#div-2{*/
+        /*    position: fixed;*/
+        /*    top:20px;*/
+        /*    right: 20px;*/
+
+        /*}*/
+
+
+        /*position:sticky*/
+        body{
+            height: 400vh;
+        }
+       #div-2{
+           position: sticky;
+           top: 0;
+       }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="div-1">Div 1</div>
+    <div id="div-2">Div 2</div>
+    <div id="div-3">Div 3</div>
+</div>
+</body>
+</html>

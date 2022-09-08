@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sınıf Ataması</title>
+	<style>
+        .bg-danger {
+            color: white;
+            background-color: #DC3545;
+        }
+	</style>
+</head>
+<body>
+
+<h2>JavaScript ile Sınıf Değiştirme</h2>
+<script >
+	let baslik= document.querySelector('h2')
+
+	// sınıf ekle
+	baslik.classList.add("bg-danger")
+
+	// sınıf kaldır
+	baslik.classList.remove("bg-danger")
+
+	// sınıf geçişi
+	baslik.classList.toggle("bg-danger")
+</script>
+</body>
+</html>

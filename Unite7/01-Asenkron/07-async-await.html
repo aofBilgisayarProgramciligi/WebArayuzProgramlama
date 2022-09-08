@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Async/Await</title>
+</head>
+<body>
+<h1>async/await örneği</h1>
+<script>
+
+    // async function funck1() {
+    //     return "Hello";
+    //
+    // }
+    //
+    // console.log("1. fonksiyon :", funck1());
+    //
+    // // çıktı:1. fonksiyon : Promise{<fulfilled>: 'Hello'}
+    //
+    // function funck2() {
+    //     return Promise.resolve("Hello");
+    // }
+    //
+    // console.log("2. fonksiyon :", funck2());
+    // //2. fonksiyon : Promise{<fulfilled>: 'Hello'}
+    //
+    //
+    // funck1().then(data => console.log("İşlem başarılı :", data))
+    // çıktı:İşlem başarılı : Hello
+
+
+    async function topla(a, b) {
+        return a + b
+    }
+
+    async function ortalama(a) {
+        return a / 2
+    }
+
+    // topla(3, 5)
+    //     .then(data => {
+    //             ortalama(data)
+    //                 .then(data2 => {
+    //                     console.log(data2)
+    //                 })
+    //         }
+    //     )
+    //
+
+    // Immediately Invoked Function Expression
+    ( async () => {
+       let toplam = await topla(3,5)
+       let sonuc = await ortalama(toplam)
+        console.log(sonuc);
+       //çıktı : 4
+    })()
+    // )
+
+
+</script>
+</body>
+</html>

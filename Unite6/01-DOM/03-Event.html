@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<title>Event Örnek</title>
+  <style>
+    .bg-danger {
+      color: white;
+      background-color: #DC3545;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Event Örneği</h1>
+
+<button type="button">Sınıf Değiştir</button>
+
+<script>
+	// buton öğesine ulaşır
+	let btn = document.querySelector("button")
+
+	//event eklen
+	btn.addEventListener('click', ()=>{
+        //başlık etiketine ulaş ve sınıfı değiştir
+        let baslik= document.querySelector("h1")
+		baslik.classList.toggle("bg-danger")
+  })
+
+</script>
+
+</body>
+</html>

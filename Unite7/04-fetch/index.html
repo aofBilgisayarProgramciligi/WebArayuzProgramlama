@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>JavaScript | fetch() Örneği</title>
+</head>
+<body>
+<h2>fetch() örneği</h2>
+<hr>
+<button type="button" onclick="getUsers()"
+        class="btn btn-primary float-end mx-3">Kullanıcıları Getir</button>
+<div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Kullanıcı Adı</th>
+            <th scope="col">Ad Soyad</th>
+            <th scope="col">Eposta</th>
+        </tr>
+        </thead>
+        <tbody id="user-rows">
+        <tr>
+            <th scope="row">-</th>
+            <td colspan="3">Listeyi güncellemek için "Kullanıcıları Getir" butonuna basınız</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise</title>
+</head>
+<body>
+<h1>promise örneği</h1>
+<script>
+    let promise1 = new Promise(function (resolve, reject) {
+        // Çıktıyı üreten
+        // resolve("Veriler Başarılı Bir Şekilde Yüklendi.") //Başarılı
+        reject("Veriler yüklenemedi!") //Başarısız
+
+    });
+    console.log(promise1)
+    // // Çıktıyı kullanan (Promise tamamlanana kadar bekler)
+    promise1
+        .then(data=> console.log("İşlem başarılı :",data))
+        .catch(error=> console.log("Hata var :",error))
+</script>
+</body>
+</html>
